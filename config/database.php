@@ -45,8 +45,8 @@ return [
        //REMOTE CONNECTION WITH CONNECTION String URL(dsn)
         'mongodb' => [
             'driver' => 'mongodb',
-            'dsn' => env('DB_DSN'),
-            'database' => env('DB_DATABASE', 'homestead'),
+            'dsn' => env('DB_DSN',false),
+            'database' => env('DB_DATABASE', false),
         ],
 
         //LOCAL CONNECTION
